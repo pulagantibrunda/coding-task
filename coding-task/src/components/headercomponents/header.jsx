@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ThemeToggler = () => {
-  // Define a state to keep track of the current theme, default is light
+  
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   // Function to toggle the theme
