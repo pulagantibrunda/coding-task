@@ -1,0 +1,68 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Light Mode */
+  .app.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Dark Mode */
+  .app.dark {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  /* Mode Switcher with Icon */
+  .mode-switch {
+    width: 70px;
+    height: 35px;
+    background-color: #ccc;
+    border-radius: 35px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .switch-slider {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .switch-slider-dark {
+    left: 37px; /* Move the slider to the right when dark mode is active */
+    background-color: #333;
+  }
+  
+  .switch-slider-light {
+    left: 2.5px;
+    background-color: #ffeb3b; /* Represent sun (light mode) with yellow */
+  }
+  
+  .mode-switch:hover {
+    background-color: #b3b3b3;
+  }
+  
